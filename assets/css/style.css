@@ -81,6 +81,11 @@ input[type="submit"] {
   margin-bottom: 2vw;
 }
 
+#betrag-in-euro::after {
+  content: "*";
+  color: red;
+}
+
 @media screen and (max-width: 650px) {
   main {
     height: 100%;
