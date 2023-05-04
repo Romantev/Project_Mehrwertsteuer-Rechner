@@ -13,22 +13,22 @@ main {
 }
 
 h1 {
-  font-size: 4vw;
+  font-size: 3rem;
 }
 
 h2 {
-  font-size: 2vw;
+  font-size: 1.5rem;
   margin-bottom: 0.5vw;
 }
 
 h3 {
-  font-size: 3vw;
+  font-size: 2rem;
   margin-bottom: 1vw;
   color: lightseagreen;
 }
 
 p {
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 p::after {
@@ -36,7 +36,9 @@ p::after {
 }
 
 section {
-  width: 50%;
+  display: flex;
+  flex-direction: column;
+  width: 40%;
   border: 2px solid black;
   border-radius: 20px;
   padding: 1vw;
@@ -49,12 +51,12 @@ article {
   border: 1px solid rgba(0, 0, 0, 0.139);
   padding: 10px;
   border-radius: 10px;
-  margin-bottom: 2vw;
+  margin-bottom: 1vw;
 }
 
 label {
   margin-bottom: 0.5vw;
-  font-size: 2vw;
+  font-size: 1.5vw;
 }
 
 input[type="number"] {
@@ -62,7 +64,7 @@ input[type="number"] {
   width: 30%;
   border-radius: 10px;
   padding: 10px;
-  font-size: 2vw;
+  font-size: 1.5rem;
 }
 
 input[type="submit"] {
@@ -70,7 +72,7 @@ input[type="submit"] {
   height: 4vw;
   background: lightseagreen;
   color: white;
-  font-size: 2vw;
+  font-size: 1.5rem;
   border-radius: 10px;
   margin-bottom: 2vw;
 }

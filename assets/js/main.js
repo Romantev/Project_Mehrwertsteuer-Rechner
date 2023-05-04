@@ -4,12 +4,12 @@ const mehrwertSteuer = document.querySelector(
 ).value;
 const betragNettoBrutto = document.querySelector(".betrag-netto-brutto");
 
-//* Funktion um den Text zu Netto ändern
+//* Funktion um den Text zu Netto zuändern
 changeTextNetto = () => {
   betragInEuro.innerHTML = "Nettobetrag (Preis ohne Mehrwertsteuer) in Euro";
   betragNettoBrutto.innerHTML = "Bruttobetrag (Endpreis)";
 };
-//* Funktion um den Text zu Netto ändern
+//* Funktion um den Text zu Netto zuändern
 changeTextBrutto = () => {
   betragInEuro.innerHTML =
     "Bruttobetrag (Preis inklusive Mehrwertsteuer) in Euro";
@@ -25,7 +25,9 @@ berechnen = () => {
   const outputMehrwert = document.querySelector(".mehrwertsteuerbetrag");
   const outputBetrag = document.querySelector(".betrag-ergebnis");
 
+  // von Netto auf Brutto
   if (mehrwertSteuer == "netto-zu-brutto") {
+    // bei 19%
     if (steuerSatz == 19) {
       const bruttoBetrag = betrag * 1.19;
       const bruttoBetragFixed = bruttoBetrag.toFixed(2);
@@ -34,6 +36,7 @@ berechnen = () => {
 
       outputMehrwert.innerHTML = steuerBetragFixed;
       outputBetrag.innerHTML = bruttoBetragFixed;
+      // bei 7%
     } else {
       const bruttoBetrag = betrag * 1.07;
       const bruttoBetragFixed = bruttoBetrag.toFixed(2);
@@ -43,7 +46,9 @@ berechnen = () => {
       outputMehrwert.innerHTML = steuerBetragFixed;
       outputBetrag.innerHTML = bruttoBetragFixed;
     }
+    // von Brutto auf Netto
   } else {
+    // bei 19%
     if (steuerSatz == 19) {
       const nettoBetrag = betrag / 1.19;
       const nettoBetragFixed = nettoBetrag.toFixed(2);
@@ -52,6 +57,7 @@ berechnen = () => {
 
       outputMehrwert.innerHTML = steuerBetragFixed;
       outputBetrag.innerHTML = nettoBetragFixed;
+      // bei 7%
     } else {
       const nettoBetrag = betrag / 1.07;
       const nettoBetragFixed = nettoBetrag.toFixed(2);
