@@ -55,7 +55,6 @@ article {
   flex-direction: column;
   padding: 10px;
   border-radius: 10px;
-  margin-bottom: 1vw;
 }
 
 label {
@@ -69,6 +68,7 @@ input[type="number"] {
   border-radius: 10px;
   padding: 10px;
   font-size: 1.5rem;
+  margin-bottom: 1vw;
 }
 
 input[type="submit"] {
