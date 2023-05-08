@@ -94,4 +94,22 @@ input[type="submit"] {
   section {
     width: 95%;
   }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2,
+  p,
+  label {
+    font-size: 1.2rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  input[type="number"] {
+    width: 7rem;
+  }
 }
