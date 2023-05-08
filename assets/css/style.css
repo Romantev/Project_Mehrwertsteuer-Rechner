@@ -96,21 +96,23 @@ input[type="submit"] {
   }
 
   h1 {
-    font-size: 1.8rem;
+    font-size: 10vw;
     text-align: center;
   }
 
   h2,
   p,
   label {
-    font-size: 1rem;
+    font-size: 5vw;
   }
 
   h3 {
-    font-size: 1.2rem;
+    font-size: 12vw;
+    text-align: center;
   }
 
   input[type="number"] {
-    width: 7rem;
+    width: 40vw;
+    height: 12vw;
   }
 }
